@@ -16,20 +16,12 @@ export default {
             type:"string",
         },
         {
-            name: 'mainImage',
-            title: 'Main image',
-            type: 'image',
-            options: {
-              hotspot: true,
-            },
-        },
-        {
             name:"description",
             type:"text",
         },
         {
             name:"projectType",
-            title:"Project Type",
+            title:"Project type",
             type: "string",
             options: {
                 list: [
@@ -39,10 +31,9 @@ export default {
                 ],
             },
         },
-
         {
-            name:"link",
-         
+            name:"linkDeployed",
+            title:"Deployed Link",
             type: "url",
         },
         {
@@ -50,6 +41,12 @@ export default {
             title:"GitHub Repository Link",
             type: "url",
         },
+        {
+            name:"linkOther",
+            title:"Other Link",
+            type: "url",
+        },
+
         {
             name: "tags",
             type:"array",

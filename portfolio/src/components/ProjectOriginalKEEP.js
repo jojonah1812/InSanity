@@ -6,18 +6,17 @@ export default function Project() {
   const [projectData, setProjectData] = useState(null);
 
   useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "project"]{
-            title,
-            date,
-            place,
-            description,
-            projectType,
-            linkDeployed,
-            linkGitHub,
-            tags
-        }`
+    sanityClient.fetch(`*[_type == "project"]{
+          title,
+          date,
+          place,
+          description,
+          projectType,
+          linkDeployed,
+          linkGitHub,
+          linkOther,
+          tags
+      }`
       )
       .then((data) => setProjectData(data))
       .catch(console.error);
@@ -62,7 +61,7 @@ export default function Project() {
                 {project.description}
               </p>
               <a
-                href={project.linkDeployed}
+                href={project.link}
                 rel="noopener noreferrer"
                 target="_blank"
                 className="text-red-500 font-bold hover:underline hover:text-red -400 text-xl"
