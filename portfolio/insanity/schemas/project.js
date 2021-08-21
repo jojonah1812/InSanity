@@ -15,14 +15,7 @@ export default {
             name:"place",
             type:"string",
         },
-        {
-            name: 'mainImage',
-            title: 'Main image',
-            type: 'image',
-            options: {
-              hotspot: true,
-            },
-        },
+       
         {
             name:"description",
             type:"text",
@@ -42,7 +35,7 @@ export default {
 
         {
             name:"link",
-         
+            title:"Deployed Link",
             type: "url",
         },
         {

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 
 export default function Project() {
@@ -14,7 +13,7 @@ export default function Project() {
             place,
             description,
             projectType,
-            linkDeployed,
+            link,
             linkGitHub,
             tags
         }`
@@ -68,9 +67,8 @@ export default function Project() {
                 className="text-red-500 font-bold hover:underline hover:text-red -400 text-xl"
               >
                 View The Project{" "}
-                <span role="img" aria-label="right pointer">
-                  👉
-                </span>
+                
+                
               </a>
             </div>
           </article>
