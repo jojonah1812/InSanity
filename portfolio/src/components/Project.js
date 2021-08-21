@@ -60,15 +60,16 @@ export default function Project() {
                 {project.description}
               </p>
               <a
-                href={project.linkDeployed}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-red-500 font-bold hover:underline hover:text-red -400 text-xl"
-              >
-                View The Project{" "}
-                
-                
-              </a>
+                  href={project.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="text-red-500 font-bold hover:underline hover:text-red-400"
+                >
+                  View The Project{" "}
+                  <span role="img" aria-label="right pointer">
+                    👉
+                  </span>
+                </a>
             </div>
           </article>
           ))}
