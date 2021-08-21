@@ -38,11 +38,9 @@ export default {
             title:"Deployed Link",
             type: "url",
         },
-        {
-            name:"linkGitHub",
-            title:"GitHub Repository Link",
-            type: "url",
-        },
+        
+
+    
         {
             name: "tags",
             type:"array",
