@@ -38,7 +38,11 @@ export default {
             title:"Deployed Link",
             type: "url",
         },
-        
+        {
+            name:"linkGitHub",
+            title:"GitHub",
+            type: "url",
+        },
 
     
         {

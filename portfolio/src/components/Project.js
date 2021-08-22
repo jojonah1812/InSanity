@@ -14,6 +14,7 @@ export default function Project() {
             description,
             projectType,
             link,
+            linkGitHub,
             tags
         }`
       )
@@ -66,6 +67,17 @@ export default function Project() {
                   className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
                 >
                   View The Project{" "}
+                  <span role="img" aria-label="right pointer">
+                    👉
+                  </span>
+                </a>
+                <a
+                  href={project.linkGitHub}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
+                >
+                  View GitHub{" "}
                   <span role="img" aria-label="right pointer">
                     👉
                   </span>
